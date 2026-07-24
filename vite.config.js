@@ -4,13 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
+  plugins: [react(), tailwindcss()],
+  base: '/Sunshine-Dental-Hospital/',
   server: {
     watch: {
-      ignored: ['**/*.mp4', '**/*.webm', '**/*.mkv', '**/*.avi']
-    }
-  }
+      ignored: ['**/*.mp4', '**/*.webm', '**/*.mkv', '**/*.avi'],
+    },
+  },
 })
