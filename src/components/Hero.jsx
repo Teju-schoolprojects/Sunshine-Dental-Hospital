@@ -6,17 +6,17 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden text-white min-h-[65vh] lg:min-h-[75vh] flex items-center pt-8 pb-12 lg:py-16 bg-black">
       
-      {/* Background Video Layer - 100% Full Video Visibility Without Cropping */}
+      {/* Background Video Layer - Relative Path for GitHub Pages */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0 bg-black flex items-center justify-center">
         <video
-          src="/hero-video.mp4"
+          src="./hero-video.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-contain md:object-cover object-center"
         />
-        {/* Soft Focused Scrim Behind Text to Ensure Readability While Keeping Full Video Clear */}
+        {/* Soft Focused Scrim Behind Text */}
         <div className="absolute inset-y-0 left-0 w-full md:w-3/4 lg:w-3/5 bg-gradient-to-r from-black/90 via-black/60 to-transparent pointer-events-none"></div>
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
       </div>
